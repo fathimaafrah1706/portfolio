@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fathima Afrah | AI Engineer</title>
+<meta name="description" content="Fathima Afrah — AI Engineer and Computer Science graduate portfolio.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--black:#030304;--panel:#09090c;--panel2:#0d0d11;--white:#f5f3fa;--muted:#92909b;--line:#202027;--purple:#a678ff;--purple2:#7d4cff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--black);color:var(--white);font-family:"Space Grotesk",sans-serif;line-height:1.5}a{color:inherit;text-decoration:none}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.08;background-image:linear-gradient(rgba(255,255,255,.08) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.08) 1px,transparent 1px);background-size:90px 90px;mask-image:linear-gradient(to bottom,#000,transparent 70%)}
+.nav{height:68px;border-bottom:1px solid #17171c;display:flex;align-items:center;justify-content:space-between;padding:0 6%;position:sticky;top:0;background:rgba(3,3,4,.84);backdrop-filter:blur(16px);z-index:10}.brand{font-weight:700;font-size:18px;letter-spacing:-.06em}.brand b{color:var(--purple)}nav{display:flex;gap:28px;font-size:11px;color:#85828d}nav a:hover{color:var(--purple)}.resume{border:1px solid #4c3b66;border-radius:20px;padding:8px 14px;font-size:10px}.resume:hover{border-color:var(--purple);color:var(--purple)}
+.wrap{max-width:1180px;margin:auto;padding:0 34px}.hero{min-height:650px;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:30px;border-bottom:1px solid var(--line)}.eyebrow,.section-label,.type{font:500 10px "DM Mono";letter-spacing:.2em;color:#9b94ac}.eyebrow{color:#a99fc0}.hero h1{font-size:clamp(54px,7vw,92px);line-height:.88;letter-spacing:-.07em;margin:18px 0}.hero h1 span{color:var(--purple)}.hero p{max-width:530px;color:#aaa7b0;font-size:14px}.actions{display:flex;gap:9px;margin-top:25px;flex-wrap:wrap}.btn{font-size:11px;padding:10px 16px;border:1px solid #35343d;border-radius:22px}.btn.primary{background:linear-gradient(135deg,#a678ff,#7950df);border-color:#a678ff;color:#08060d}.btn:hover{border-color:var(--purple)}
+.visual{height:430px;display:grid;place-items:center;position:relative}.sphere{width:290px;height:290px;border-radius:50%;border:1px solid #4a3b66;position:relative;background:radial-gradient(circle at 50% 50%,rgba(132,79,255,.13),transparent 57%);box-shadow:0 0 100px rgba(125,76,255,.07)}.sphere:before,.sphere:after{content:"";position:absolute;border:1px solid #392d51;border-radius:50%;inset:30px}.sphere:after{inset:72px;border-color:#4d3a6d}.ring{position:absolute;width:420px;height:125px;border:1px solid #3d2e59;border-radius:50%;transform:rotate(-18deg);box-shadow:0 0 28px rgba(125,76,255,.08)}.ring.r2{width:430px;height:150px;transform:rotate(24deg)}.core{position:absolute;inset:105px;border-radius:50%;background:radial-gradient(circle,#b48cff,#7041d0 55%,#251044);box-shadow:0 0 55px rgba(166,120,255,.22)}.visual-text{position:absolute;font:9px/1.9 "DM Mono";letter-spacing:.25em;color:#b1a9bd;text-align:center}.visual-text.right{right:2%;top:42%}.visual-text.left{left:9%;top:38%}.stats{position:absolute;bottom:10px;right:0;display:flex;gap:30px}.stat strong{display:block;font-size:22px;color:var(--purple)}.stat small{color:#77737e;font:9px "DM Mono"}
+section{padding:82px 0;border-bottom:1px solid var(--line)}.section-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:30px}.section-label{color:#a99fc0}.section-top small{font:9px "DM Mono";color:#65616c}
+.featured{display:grid;grid-template-columns:1.05fr .95fr;border:1px solid var(--line);background:var(--panel);min-height:420px}.feature-copy{padding:38px}.number{font:10px "DM Mono";color:#625e69}.feature-copy .type{margin-top:42px}.feature-copy h2{font-size:49px;line-height:.95;letter-spacing:-.06em;margin:12px 0}.feature-copy h2 span{color:#aaa5b1}.feature-copy p{color:var(--muted);font-size:13px;max-width:520px}.chips{display:flex;gap:6px;flex-wrap:wrap;margin-top:20px}.chip{font:9px "DM Mono";color:#9994a2;border:1px solid #28262f;padding:5px 8px;border-radius:14px}.link{display:inline-block;color:var(--purple);font-size:11px;font-weight:600;margin-top:23px}
+.terminal{margin:25px;background:#060609;border:1px solid #28252f;border-radius:8px;overflow:hidden;display:flex;flex-direction:column}.bar{height:34px;border-bottom:1px solid #222027;display:flex;align-items:center;gap:5px;padding:0 12px}.bar i{width:6px;height:6px;border-radius:50%;background:#55515b}.bar span{font:8px "DM Mono";color:#625e68;margin-left:8px}.code{padding:24px;font:10px/2 "DM Mono";color:#bdb9c3;flex:1}.code .dim{color:#4e4a55}.terminal-foot{border-top:1px solid #222027;padding:10px 14px;color:#9272c2;font:8px "DM Mono"}
+.projects{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:10px}.card{background:var(--panel);border:1px solid var(--line);padding:23px;min-height:280px;display:flex;flex-direction:column}.card:hover{border-color:#403254;transform:translateY(-2px);transition:.2s}.card .type{margin-top:27px}.card h3{font-size:23px;line-height:1;letter-spacing:-.04em;margin:12px 0}.card p{font-size:11px;color:var(--muted)}.card .chips{margin-top:auto}.card .link{margin-top:14px}
+.about{display:grid;grid-template-columns:.8fr 1.2fr;gap:80px}.about h2{font-size:52px;line-height:.95;letter-spacing:-.06em;margin:0}.about h2 span{color:var(--purple)}.about p{color:var(--muted);font-size:13px}.skills{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:22px}.skill{background:var(--panel);border:1px solid var(--line);padding:18px 10px;text-align:center;color:#b4afbb;font-size:10px}.skill strong{display:block;color:var(--purple);font-size:16px;margin-bottom:7px}
+.journey{display:grid;grid-template-columns:1fr 1fr;gap:70px}.timeline{border-left:1px solid #302c37;padding-left:25px}.job{position:relative}.job:before{content:"";position:absolute;left:-30px;top:5px;width:8px;height:8px;border-radius:50%;background:var(--purple);box-shadow:0 0 14px rgba(166,120,255,.45)}.job h3{font-size:24px;margin:5px 0}.job .date{font:9px "DM Mono";color:#77727f}.job p,.edu p{font-size:11px;color:var(--muted)}
+.contact{text-align:center;padding:105px 0}.contact h2{font-size:clamp(52px,7vw,88px);line-height:.9;letter-spacing:-.07em;margin:18px 0}.contact h2 span{color:var(--purple)}.contact>p{color:var(--muted);font-size:13px}
+footer{max-width:1180px;margin:auto;padding:25px 34px;color:#5f5b66;font:9px "DM Mono";display:flex;justify-content:space-between}
+@media(max-width:850px){nav{display:none}.hero{grid-template-columns:1fr;padding:75px 0}.visual{display:none}.projects{grid-template-columns:1fr 1fr}.about,.journey{grid-template-columns:1fr;gap:40px}.featured{grid-template-columns:1fr}.stats{position:static;margin-top:25px}}
+@media(max-width:560px){.wrap{padding:0 18px}.nav{padding:0 18px}.projects{grid-template-columns:1fr}.hero h1{font-size:57px}.feature-copy{padding:25px}.feature-copy h2{font-size:40px}.skills{grid-template-columns:1fr 1fr}footer{padding:22px 18px}}
+</style>
+</head>
+<body>
+<header class="nav">
+<a class="brand" href="#">F<span>A</span></a>
+<nav><a href="#home">Home</a><a href="#about">About</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#contact">Contact</a></nav>
+<a class="resume" href="resume.pdf" download="Fathima-Afrah-Resume.pdf">Download Resume</a>
+</header>
+
+<div class="wrap">
+<section class="hero" id="home">
+<div>
+<div class="eyebrow">AI ENGINEER&nbsp; | &nbsp;SOFTWARE ENGINEER</div>
+<h1>Hi, I'm<br><span>Fathima Afrah</span></h1>
+<p>A Computer Science graduate building practical AI-powered solutions across machine learning, NLP, computer vision and data-driven applications.</p>
+<div class="actions"><a class="btn primary" href="#projects">View My Work&nbsp; →</a><a class="btn" href="https://github.com/fathimaafrah1706" target="_blank">◉ GitHub</a><a class="btn" href="https://www.linkedin.com/in/fathima-afrah" target="_blank">in&nbsp; LinkedIn</a></div>
+</div>
+<div class="visual">
+<div class="sphere"><div class="ring"></div><div class="ring r2"></div><div class="core"></div><div class="visual-text">IDEAS<br>MODELS<br>CODE<br>IMPACT</div></div>
+<div class="visual-text right">turning<br>data into<br>a better<br>tomorrow.</div>
+<div class="stats"><div class="stat"><strong>5+</strong><small>Projects</small></div><div class="stat"><strong>1</strong><small>Internship</small></div><div class="stat"><strong>100%</strong><small>Curiosity</small></div><div class="stat"><strong>∞</strong><small>Growth</small></div></div>
+</div>
+</section>
+
+<section id="projects">
+<div class="section-top"><span class="section-label">// FEATURED PROJECTS</span><small>VIEW ALL PROJECTS →</small></div>
+<div class="featured">
+<div class="feature-copy"><span class="number">01</span><div class="type">AI AGENT</div><h2>ParcelPilot<br><span>Support Copilot</span></h2><p>An internal AI-assisted support operations agent that investigates orders, retrieves policies and customer agreements, evaluates evidence and prepares controlled escalations.</p><div class="chips"><span class="chip">Python</span><span class="chip">AI Agent</span><span class="chip">Streamlit</span><span class="chip">Retrieval</span></div><a class="link" href="https://github.com/fathimaafrah1706/parcelpilot-ai-agent" target="_blank">View Project →</a></div>
+<div class="terminal"><div class="bar"><i></i><i></i><i></i><span>parcelpilot / agent.py</span></div><div class="code"><span class="dim">01</span> user → support question<br><span class="dim">02</span> agent → identify order<br><span class="dim">03</span> tool&nbsp; → retrieve account<br><span class="dim">04</span> tool&nbsp; → retrieve policy<br><span class="dim">05</span> agent → evaluate evidence<br><span class="dim">06</span> result → support decision<br><span class="dim">07</span> action → explicit confirmation</div><div class="terminal-foot">● controlled state-changing actions</div></div>
+</div>
+<div class="projects">
+<article class="card"><span class="number">02</span><div class="type">NLP / ML</div><h3>Personality<br>Prediction System</h3><p>Text classification using TF-IDF, feature extraction, Logistic Regression and model evaluation.</p><div class="chips"><span class="chip">Python</span><span class="chip">NLP</span><span class="chip">Scikit-learn</span></div><a class="link" href="https://github.com/fathimaafrah1706" target="_blank">GitHub →</a></article>
+<article class="card"><span class="number">03</span><div class="type">COMPUTER VISION</div><h3>Skin Cancer<br>Detection</h3><p>Computer vision project focused on image preprocessing and skin-lesion analysis.</p><div class="chips"><span class="chip">Python</span><span class="chip">OpenCV</span></div><a class="link" href="https://github.com/fathimaafrah1706" target="_blank">GitHub →</a></article>
+<article class="card"><span class="number">04</span><div class="type">COMPUTER VISION</div><h3>Road Lane<br>Detection</h3><p>Road-lane detection using image processing and computer vision techniques.</p><div class="chips"><span class="chip">Python</span><span class="chip">OpenCV</span></div><a class="link" href="https://github.com/fathimaafrah1706" target="_blank">GitHub →</a></article>
+<article class="card"><span class="number">05</span><div class="type">BIOMETRICS</div><h3>SmartVein-ID</h3><p>Infrared hand-vein authentication using Raspberry Pi, OpenCV and SQLite audit logs.</p><div class="chips"><span class="chip">Python</span><span class="chip">OpenCV</span><span class="chip">Raspberry Pi</span></div><a class="link" href="https://github.com/fathimaafrah1706" target="_blank">GitHub →</a></article>
+</div>
+</section>
+
+<section id="about">
+<div class="section-top"><span class="section-label">// ABOUT ME</span></div>
+<div class="about">
+<div><h2>A Curious Mind<br><span>Building with AI</span></h2></div>
+<div><p>I'm a Computer Science graduate with hands-on experience in data analysis, machine learning, NLP, computer vision and Python-based data processing.</p><p>I enjoy turning ideas into working solutions and learning technologies that help build practical intelligent systems.</p><div class="skills" id="skills"><div class="skill"><strong>Py</strong>Python</div><div class="skill"><strong>ML</strong>Machine Learning</div><div class="skill"><strong>CV</strong>Computer Vision</div><div class="skill"><strong>NLP</strong>NLP</div><div class="skill"><strong>SQL</strong>Data & SQL</div><div class="skill"><strong>BI</strong>Power BI</div><div class="skill"><strong>☁</strong>AWS</div><div class="skill"><strong>⌘</strong>Git & GitHub</div></div></div>
+</div>
+</section>
+
+<section id="experience">
+<div class="section-top"><span class="section-label">// EXPERIENCE & EDUCATION</span></div>
+<div class="journey">
+<div><div class="type">MY JOURNEY</div><div class="timeline"><div class="job"><div class="date">JUL 2025 — AUG 2025</div><h3>CodeClause · AI Intern</h3><p>Worked across data extraction, preprocessing, feature engineering, model evaluation, structured SQLite pipelines and QA.</p></div></div></div>
+<div class="edu"><div class="type">EDUCATION</div><h3>B.Tech — Computer Science & Engineering</h3><p> B.S. Abdur Rahman Crescent Institute of Science & Technology, Chennai · 2022–2026</p><div class="type" style="margin-top:30px">CERTIFICATIONS</div><p>AWS Solutions Architecture Job Simulation — AWS / Forage</p><p>GenAI Powered Data Analytics Job Simulation — Tata Group / Forage</p><p>Foundations: Data, Data, Everywhere — Google / Coursera</p></div>
+</div>
+</section>
+
+<section class="contact" id="contact"><div class="section-label">05 / CONTACT</div><h2>Let's Build Something<br><span>Useful.</span></h2><p>Open to entry-level opportunities in AI, software engineering and data-focused roles.</p><div class="actions" style="justify-content:center"><a class="btn primary" href="mailto:afrahfathima1706@gmail.com">Get In Touch →</a><a class="btn" href="https://www.linkedin.com/in/fathima-afrah" target="_blank">LinkedIn ↗</a></div></section>
+</div>
+<footer><span>© 2026 FATHIMA AFRAH M A</span><span>CHENNAI, INDIA</span></footer>
+</body>
+</html>
